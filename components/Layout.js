@@ -25,6 +25,7 @@ import {
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import CancelIcon from '@mui/icons-material/Cancel';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import Head from 'next/head';
 import NextLink from 'next/link';
 import classes from '../utils/classes';
@@ -149,7 +150,7 @@ export default function Layout({ title, description, children }) {
               </IconButton>
               <NextLink href="/" passHref>
                 <Link>
-                  <Typography sx={classes.brand}>amazona</Typography>
+                  <Typography sx={classes.brand}>Wirngo</Typography>
                 </Link>
               </NextLink>
             </Box>
@@ -225,10 +226,12 @@ export default function Layout({ title, description, children }) {
                         color="secondary"
                         badgeContent={cart.cartItems.length}
                       >
-                        Cart
+                        {/* Cart */}
+                        <AddShoppingCartIcon />
                       </Badge>
                     ) : (
-                      'Cart'
+                      <AddShoppingCartIcon />
+                      // 'Cart'
                     )}
                   </Typography>
                 </Link>
@@ -267,7 +270,7 @@ export default function Layout({ title, description, children }) {
                 </>
               ) : (
                 <NextLink href="/login" passHref>
-                  <Link>Login</Link>
+                  <Link>Sign In</Link>
                 </NextLink>
               )}
             </Box>

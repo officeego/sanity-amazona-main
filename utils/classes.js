@@ -15,7 +15,10 @@ const classes = {
     textAlign: 'center',
   },
   appbar: {
-    backgroundColor: '#203040',
+    // backgroundColor: '#203040',
+    backgroundColor: '#09353d',
+    // position:'fixed',
+    // zIndex: '1',
     '& a': {
       color: '#ffffff',
       marginLeft: 1,
@@ -54,6 +57,7 @@ const classes = {
   searchInput: {
     paddingLeft: 1,
     color: '#000000',
+    width: '220px',
     '& ::placeholder': {
       color: '#606060',
     },
